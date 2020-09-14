@@ -3,12 +3,11 @@ import List from './List';
 import DescTop from './DescTop';
 import DescBottom from './DescBottom';
 
-
 const Institutions = () => {
     return (
         <div className="institutions">
             <SubpageHeader>
-                Financial institutions
+                Financial institutions <br />
                 in poland
             </SubpageHeader>
             <DescTop />

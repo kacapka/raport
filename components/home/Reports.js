@@ -40,14 +40,16 @@ const Reports = () => {
                             Polish FinTechs
                         </p>
                     </div>
-                    <div className="reports-list__item">
-                        <img src={icon4} alt="authorities" />
-                        <p>
-                            Regulatory <br />
-                            and supervisory <br />
-                            authorities
-                        </p>
-                    </div>
+                    <Link href="/regulatory-and-supervisory-authorities">
+                        <div className="reports-list__item">
+                            <img src={icon4} alt="authorities" />
+                            <p>
+                                Regulatory <br />
+                                and supervisory <br />
+                                authorities
+                            </p>
+                        </div>
+                    </Link>
                     <Link href="/financial-institutions-in-poland">
                         <div className="reports-list__item">
                             <img src={icon5} alt="institutions" />
@@ -86,7 +88,7 @@ const Reports = () => {
             <div className="reports-banner">
                 <Title color="white">Get the entire report</Title>
             </div>
-        </section>
+        </section >
     );
 };
 

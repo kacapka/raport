@@ -17,7 +17,8 @@ module.exports = withImages(
             return {
                 "/": { page: "/" },
                 "/about-poland": { page: "/about-poland" },
-                "/financial-institutions-in-poland": { page: "/financial-institutions-in-poland" }
+                "/financial-institutions-in-poland": { page: "/financial-institutions-in-poland" },
+                "/regulatory-and-supervisory-authorities": { page: "/regulatory-and-supervisory-authorities" }
             };
         }
     })

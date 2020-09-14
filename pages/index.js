@@ -5,7 +5,7 @@ import HomePage from '../components/home';
 
 const Home = () => (
 	<Fragment>
-		<Head title="raport" />
+		<Head title="How do Fintech in Poland" />
 		<HomePage />
 	</Fragment>
 )

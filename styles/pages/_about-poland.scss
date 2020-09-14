@@ -1,11 +1,12 @@
 .about-poland {
     .hero {
         height: calc(100vh - 80px);
-        // background-image: url('/img/poland_map.png');
+        background-image: url('https://fintech-in-poland.s3.eu-central-1.amazonaws.com/poland_map.png');
         background-position: right;
         background-size: contain;
         display: flex;
         align-items: center;
+        background-repeat: no-repeat;
         &-details {
             margin-top: 90px;
             &__item {
@@ -37,7 +38,7 @@
 
         }
         &-features {
-            margin-bottom: 100px;
+            margin: 40px 0 100px 0;
             display: flex;
             justify-content: space-between;
             &__item {

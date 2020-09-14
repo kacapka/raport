@@ -1,3 +1,4 @@
+import Button from "../shared/Button";
 
 const Desc = () => {
     return (
@@ -13,12 +14,12 @@ const Desc = () => {
                     <p>
                         „The global FinTech sector is at a turning point.
                     </p>
-                    <p>
+                    <p className="desc-box__text">
                         As predicted by analysts, in 2030 it will reach annual revenues of
                         USD 500bn and will develop three times faster than the traditional
                         financial sector.”
                     </p>
-                    <a href="">read more</a>
+                    <Button className="desc-box__button" />
                     <div className="container desc-box__frame"></div>
                 </div>
             </div>

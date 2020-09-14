@@ -18,6 +18,9 @@
                 &.active {
                     @extend %black;    
                 }
+                &:hover {
+                    @extend %black;
+                }
             }
         }
     }
