@@ -16,9 +16,8 @@ module.exports = withImages(
         exportPathMap: function () {
             return {
                 "/": { page: "/" },
-                // "/faq": { page: "/faq" },
-                // "/pricing": { page: "/pricing" },
-                // "/team": { page: "/team" }
+                "/about-poland": { page: "/about-poland" },
+                "/financial-institutions-in-poland": { page: "/about-poland" }
             };
         }
     })
