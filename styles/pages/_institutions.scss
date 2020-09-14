@@ -1,0 +1,80 @@
+.institutions {
+    color: $dark;
+    .accordion {
+        &-item {
+            border-bottom: 1px solid $borderGreen;
+            &__trigger {
+                padding: 0 50px 0 20px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;    
+            }
+            &__button {
+                flex: 0 0 42px;
+                width: 42px;
+                height: 42px;
+                border: 2px solid $dark;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &--open {
+                    border: none;
+                    background-color: $borderGreen;
+                }
+                img {
+                    width: 18px;
+                }
+            }
+            &__label {
+                @extend %bold;
+                font-size: 20px;
+                margin-left: 20px
+            }
+            &__content {
+                padding: 0 30px 30px 82px;
+            }
+        }
+        &-wrapper {
+            border-top: 1px solid $borderGreen;    
+            margin: 80px 0;
+        }
+        &-content {
+            &__wrapper {
+                margin-bottom: 30px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+            &__title {
+                @extend %semi-bold;
+            }
+            &__desc {
+                @extend %medium;
+            }    
+        }
+    }
+    .desc {
+        &-text {
+           @extend %medium;
+           font-size: 20px;
+           line-height: 30px; 
+           margin-bottom: 30px;
+        }
+        &-list {
+            margin-bottom: 30px;
+            list-style: none;
+            li {
+                @extend %medium;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        &--top {
+            margin-top: 80px;
+        }
+        &--bottom {
+            margin-bottom: 80px;
+        }
+    }
+}

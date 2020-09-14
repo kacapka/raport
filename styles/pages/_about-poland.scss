@@ -1,0 +1,214 @@
+.about-poland {
+    .hero {
+        height: calc(100vh - 80px);
+        // background-image: url('/img/poland_map.png');
+        background-position: right;
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        &-details {
+            margin-top: 90px;
+            &__item {
+                display: flex;
+                margin-bottom: 30px;
+                &__value {
+                    @extend %black;
+                    font-size: 40px;
+                    margin-right: 30px;
+                    width: 145px;
+                    text-align: right;
+                    sup {
+                        font-size: 32px;
+                    }
+                }
+                &__desc {
+                    @extend %medium;
+                    font-size: 21px;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    top: 20px;
+                }
+            }
+        }
+    } 
+    .content {
+        &-conatiner {
+
+        }
+        &-features {
+            margin-bottom: 100px;
+            display: flex;
+            justify-content: space-between;
+            &__item {
+                width: 260px;
+                height: 260px;
+                background-color: $green;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 70px;
+                color: #fff;
+                &__title {
+                    @extend %black;
+                    font-size: 26px;
+                    margin-bottom: 10px;
+                }
+                &__desc {
+                    @extend %medium;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-align: center;
+                }
+            }
+        }
+        h2 {
+            text-align: center;
+            @extend %black;
+            font-size: 37px;
+            margin-bottom: 70px;
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            padding-left: 200px;
+            margin-bottom: 100px;
+            &__item {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 50px;
+                &__icon {
+                    width: 170px;
+                    display: flex;
+                    justify-content: center;
+                    .icon1 {
+                        width: 70px;
+                    }
+                    .icon2 {
+                        width: 71px;
+                    }
+                    .icon3 {
+                        width: 38px;
+                    }
+                    .icon4 {
+                        width: 65px;
+                    }
+                }
+                &__title {
+                    @extend %black;
+                    font-size: 26px;
+                    margin-bottom: 15px;
+                }
+                &__desc {
+                    @extend %semi-bold;
+                    font-size: 20px;
+                    line-height: 46px;
+                }
+            }
+        }
+        &-banner {
+            background-color: $nav;
+            padding: 60px 0;
+            color: $dark;
+            margin-bottom: 100px;
+            h3 {
+                @extend %extra-bold;
+                font-size: 30px;
+                margin-bottom: 30px;
+            }   
+            &__wrapper {
+                width: 920px;
+                margin: 0 auto;
+            }
+            &__item {
+                display: flex;
+                margin-bottom: 10px;
+            } 
+            &__value {
+                @extend %black;
+                font-size: 20px;   
+                width: 155px; 
+            }
+            &__label {
+                @extend %medium;
+                font-size: 20px;
+            }
+        }
+    }
+    .institutions {
+        &-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        h2 {
+            @extend %black;
+            font-size: 37px;
+            margin-bottom: 50px;
+        }
+        &-desc {
+            @extend %medium;
+            color: $dark;
+            font-size: 20px;
+            margin-bottom: 50px;
+            width: 750px;
+            line-height: 36px;
+            text-align: center;  
+        }
+        &-wrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__map {
+                width: 600px;
+            }
+            &__box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__revoult {
+                margin-bottom: 40px;
+                width: 253px;
+                text-align: center;
+            }
+            &__desc {
+                @extend %medium;
+                color: $dark;
+                font-size: 20px;
+                line-height: 36px;
+                margin-bottom: 50px;
+                width: 400px;  
+                text-align: center;  
+            }
+        }
+    }
+    .opinion {
+        color: #fff;
+        padding: 60px 0;
+        background: $purple;
+        &-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            @extend %extra-bold;
+            font-size: 30px;  
+            margin-bottom: 30px;
+        }
+        p {
+            @extend %medium;
+            font-size: 20px;
+            line-height: 36px;
+            text-align: center;
+        }
+        &-author {
+            margin-top: 45px;
+            width: 600px;
+        }
+    }
+}

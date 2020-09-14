@@ -1,0 +1,41 @@
+.container {
+    margin: 0 auto;
+    width: 1160px;
+}
+
+.container--small {
+    margin: 0 auto;
+    width: 1060px;
+}
+
+.title {
+    @extend %black;
+    font-size: 55px;
+    text-transform: uppercase;
+    &--green {
+        color: $green;
+    }
+    &--purple {
+        color: $purple;
+    }
+    &--white {
+        color: #fff;
+    }
+}
+
+.header {
+    background-image: linear-gradient(#744ab7, #3b1f69);
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: $nav;
+        @extend %black;
+        font-size: 55px;
+    }
+}
+
+.ReactCollapse--collapse {
+    transition: height 500ms;
+  }

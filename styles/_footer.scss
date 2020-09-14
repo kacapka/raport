@@ -1,0 +1,36 @@
+.footer {
+    height: 100px;
+    color: #fff;
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-logo {
+        width: 125px;
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            font-size: 14px;
+            line-height: 18px;
+            &.bold {
+                @extend %bold;
+                margin-bottom: 5px;
+            } 
+            &.regular {
+                @extend %regular;
+            }    
+        }
+    }
+    &-email {
+        @extend %regular;
+        color: #fff;
+        font-size: 14px;
+        line-height: 18px;    
+    }
+}

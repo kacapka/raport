@@ -1,0 +1,28 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: $purple;
+	font-weight: normal;
+	font-size: 16px;
+	overflow-x: hidden;
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+h1,h2,h3, h4 {
+	font-weight: normal;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
