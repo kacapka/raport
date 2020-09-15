@@ -23,7 +23,7 @@ const Reports = () => {
                             <p>
                                 About <br />
                                 Poland
-                        </p>
+                            </p>
                         </div>
                     </Link>
                     <div className="reports-list__item">
@@ -57,32 +57,38 @@ const Reports = () => {
                                 Financial  <br />
                                 institutions <br />
                                 in Poland
-                        </p>
+                            </p>
                         </div>
                     </Link>
-                    <div className="reports-list__item">
-                        <img src={icon6} alt="UE financial" />
-                        <p>
-                            Poland as a gateway <br />
-                            to the UE financial <br />
-                            market
-                        </p>
-                    </div>
-                    <div className="reports-list__item">
-                        <img src={icon7} alt="Accelerators" />
-                        <p>
-                            Accelerators  <br />
-                            and acceleration< br />
-                            programmes
-                        </p>
-                    </div>
-                    <div className="reports-list__item">
-                        <img src={icon8} alt="Innovation" />
-                        <p>
-                            Innovation <br />
-                            Hub
-                        </p>
-                    </div>
+                    <Link href="/ue-financial-market">
+                        <div className="reports-list__item">
+                            <img src={icon6} alt="UE financial market" />
+                            <p>
+                                Poland as a gateway <br />
+                                to the UE financial <br />
+                                market
+                            </p>
+                        </div>
+                    </Link>
+                    <Link href='/accelerators-and-acceleration-programmes'>
+                        <div className="reports-list__item">
+                            <img src={icon7} alt="Accelerators" />
+                            <p>
+                                Accelerators  <br />
+                                and acceleration< br />
+                                programmes
+                            </p>
+                        </div>
+                    </Link>
+                    <Link href="/innovation-hub-programmme">
+                        <div className="reports-list__item">
+                            <img src={icon8} alt="Innovation" />
+                            <p>
+                                Innovation <br />
+                                Hub
+                            </p>
+                        </div>
+                    </Link>
                 </div>
             </div>
             <div className="reports-banner">
