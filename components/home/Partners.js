@@ -5,7 +5,7 @@ import logo from '../../static/img/logo_black.png';
 import logo1 from '../../static/img/partners_logo_1.png';
 import logo2 from '../../static/img/partners_logo_2.png';
 import logo3 from '../../static/img/partners_logo_3.png';
-import logo4 from '../../static/img/partners_logo_4.png';
+import logo4 from '../../static/img/partners_logo_4.jpg';
 import logo5 from '../../static/img/partners_logo_5.png';
 import logo6 from '../../static/img/partners_logo_6.png';
 import logo7 from '../../static/img/partners_logo_7.png';
