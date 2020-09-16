@@ -92,7 +92,9 @@ const Reports = () => {
                 </div>
             </div>
             <div className="reports-banner">
-                <Title color="white">Get the entire report</Title>
+                <a href="https://fintech-in-poland.s3.eu-central-1.amazonaws.com/how-to-fintech-in-poland.pdf" download target="_blank">
+                    <Title color="white">Get the entire report</Title>
+                </a>
             </div>
         </section >
     );

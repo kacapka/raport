@@ -40,9 +40,6 @@
             line-height: 45px;  
             text-align: center;
             width: 900px;
-            &.with-margin {
-                margin-bottom: 20px;
-            }
         }
         &-box {
             background-color: $purple;
@@ -53,7 +50,7 @@
             padding: 70px 0 50px 0;
             margin: 140px 0 40px 0;
             position: relative;
-            p {
+            &__text {
                 @extend %extra-bold;
                 font-size: 30px;
                 line-height: 45px;
@@ -79,7 +76,18 @@
             }
         }
         &-collapse {
+            width: 1100px;
             margin-top: 50px;
+            &__text {
+                @extend %medium;
+                font-size: 20px;
+                line-height: 30px;  
+                color: #fff; 
+                text-align: center;
+                &.with-margin {
+                    margin-bottom: 20px;
+                } 
+            }
         }
     }
     

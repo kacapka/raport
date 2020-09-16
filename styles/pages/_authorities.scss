@@ -40,10 +40,8 @@
             margin-bottom: 30px;
         }
         &__content {
+            @extend %subpage-desc;
             margin-top: 40px;
-            @extend %medium;
-            font-size: 20px;
-            line-height: 30px;
             ul {
                 list-style: none;
             }

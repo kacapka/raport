@@ -27,7 +27,6 @@
                     position: absolute;
                     top: 80px;
                     background-color: $dark;
-                    height: 0;
                     max-height: 0;
                     list-style: none;
                     transition: all ease 0.4s;
@@ -35,6 +34,9 @@
                     z-index: 99;
                     li {
                         padding: 5px 0;
+                        a {
+                            font-size: 18px;    
+                        }
                     }
                 }
             }
@@ -42,10 +44,9 @@
         .menu {
             &:hover {
                 .menu-list {
-                    padding: 20px;
+                    padding: 10px 20px;
                     transition: all ease 0.4s;
-                    height: 312px;
-                    max-height: 312px;     
+                    max-height: 300px;     
                 }
             }
         }

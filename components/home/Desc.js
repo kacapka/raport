@@ -19,7 +19,7 @@ const Desc = () => {
                     the regulatory framework determined by national and EU legislation as well as its key market players.
                 </p>
                 <div className="desc-box">
-                    <p>
+                    <p className="desc-box__text">
                         „The global FinTech sector is at a turning point.
                     </p>
                     <p className="desc-box__text">
