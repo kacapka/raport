@@ -8,22 +8,30 @@ const Nav = () => {
 
 	return (
 		<nav className="nav">
-			<ul>
-				<li>
+			<ul className="nav-list">
+				<li className="nav-list__item">
 					<Link href="/">
 						<a className={classnames({ 'active': pathname === "/" })}>
 							Home
 						</a>
 					</Link>
 				</li>
-				<li>
-					<Link href="/summary">
-						<a className={classnames({ 'active': pathname === "/summary" })}>
-							Raport Summary
-						</a>
-					</Link>
+				<li className="nav-list__item menu">
+					<a className={classnames({ 'active': pathname === "/summary" })}>
+						Raport Summary
+					</a>
+					<ul className="menu-list">
+						<li><Link href="/about-poland"><a>About Poland</a></Link></li>
+						<li><Link href="/about-poland"><a>The Polish financial sector</a></Link></li>
+						<li><Link href="/about-poland"><a>Map of Polish FinTechs</a></Link></li>
+						<li><Link href="/regulatory-and-supervisory-authorities"><a>Regulatory and supervisory authorities</a></Link></li>
+						<li><Link href="/financial-institutions-in-poland"><a>Financial institutions in Poland</a></Link></li>
+						<li><Link href="/ue-financial-market"><a>Poland as a gateway to the UE financial market</a></Link></li>
+						<li><Link href="/accelerators-and-acceleration-programmes"><a>Accelerators and acceleration programmes</a></Link></li>
+						<li><Link href="/innovation-hub-programmme"><a>Innovation Hub</a></Link></li>
+					</ul>
 				</li>
-				<li>
+				<li className="nav-list__item">
 					<Link href="/team">
 						<a>
 							Partners
@@ -32,14 +40,14 @@ const Nav = () => {
 				</li>
 				{
 					pathname === "/" && (
-						<li>
+						<li className="nav-list__item">
 							<Scroll.Link to="home_contact" spy={true} smooth={true} offset={50} duration={1000}>
 								Contact
 							</Scroll.Link>
 						</li>
 					)
 				}
-				<li>
+				<li className="nav-list__item">
 					<a href="https://fintech-in-poland.s3.eu-central-1.amazonaws.com/how-to-fintech-in-poland.pdf" download target="_blank">
 						Get the raport
 					</a>

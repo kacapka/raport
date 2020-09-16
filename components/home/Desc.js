@@ -1,6 +1,14 @@
+import { useState } from 'react';
+import { Collapse } from 'react-collapse';
 import Button from "../shared/Button";
+import DescCollpase from './DescCollapse';
 
 const Desc = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const handleOnClick = () => {
+        setIsOpen(prev => !prev);
+    };
+
     return (
         <section className="desc">
             <div className="desc-container">
@@ -19,7 +27,13 @@ const Desc = () => {
                         USD 500bn and will develop three times faster than the traditional
                         financial sector.”
                     </p>
-                    <Button className="desc-box__button" />
+                    <Button
+                        className="desc-box__button"
+                        onClick={handleOnClick}
+                    />
+                    <Collapse isOpened={isOpen}>
+                        <DescCollpase />
+                    </Collapse>
                     <div className="container desc-box__frame"></div>
                 </div>
             </div>

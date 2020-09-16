@@ -1,15 +1,14 @@
 .nav {
-    height: 80px;
-    background-color: $dark;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    ul {
+    &-list {
         list-style: none;
+        height: 80px;
+        background-color: $dark;
         display: flex;
-        justify-content: center;
         align-items: center;
-        li {
+        justify-content: center;
+        &__item {
+            height: 100%;
+            padding-top: 28px;
             margin: 0 60px;
             a {
                 @extend %semi-bold;
@@ -19,7 +18,34 @@
                     @extend %black;    
                 }
                 &:hover {
-                    @extend %black;
+                    color: $bgLight;
+                }
+            }
+            .menu {
+                &-list {
+                    padding: 0 20px;
+                    position: absolute;
+                    top: 80px;
+                    background-color: $dark;
+                    height: 0;
+                    max-height: 0;
+                    list-style: none;
+                    transition: all ease 0.4s;
+                    overflow: hidden;
+                    z-index: 99;
+                    li {
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+        .menu {
+            &:hover {
+                .menu-list {
+                    padding: 20px;
+                    transition: all ease 0.4s;
+                    height: 312px;
+                    max-height: 312px;     
                 }
             }
         }

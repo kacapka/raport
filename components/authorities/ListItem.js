@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Collapse } from 'react-collapse';
-import classnames from 'classnames';
 import Button from '../shared/Button';
 
 const LisItem = ({ data: { logo, company, name, className }, children }) => {

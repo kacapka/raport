@@ -39,7 +39,10 @@
             font-size: 30px;
             line-height: 45px;  
             text-align: center;
-            width: 900px;  
+            width: 900px;
+            &.with-margin {
+                margin-bottom: 20px;
+            }
         }
         &-box {
             background-color: $purple;
@@ -75,6 +78,9 @@
                 margin-top: 20px;
             }
         }
+        &-collapse {
+            margin-top: 50px;
+        }
     }
     
     .reports {
@@ -98,6 +104,7 @@
                 background-color: $green;
                 padding-top: 30px;
                 margin-bottom: 80px;
+                transition: all ease 0.2s;
                 img {
                     margin-bottom: 25px;
                     height: 60px;
@@ -108,6 +115,11 @@
                     line-height: 30px;
                     color: #fff;
                     text-align: center;
+                }
+                &:hover {
+                    cursor: pointer;
+                    transition: all ease 0.2s;
+                    transform: scale(1.05);
                 }
             }
         }
