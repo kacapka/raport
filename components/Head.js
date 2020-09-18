@@ -8,7 +8,7 @@ const Head = props => (
         <meta name="robots" content="index, follow"></meta>
         <meta
             name="keywords"
-            content="Fintech, fintechpoland, hankhaton, warsaw fintech, financial event, banking innovation, events warsaw"
+            content="Fintech, fintech poland, innovation hub programmme, financial market, financial institutions, fintech report"
         ></meta>
         <meta
             name="description"
@@ -24,11 +24,11 @@ const Head = props => (
 			content="https://maniera.s3.eu-central-1.amazonaws.com/maniera_main_desktop_standard.jpg"
 		/> */}
 
-        <meta property="og:description" content="Maniera" />
+        <meta property="og:description" content="How to do FinTech in Poland" />
 
         <meta property="og:url" content="https://www.warsawfintechweek.pl/" />
 
-        <meta property="og:title" content="Warsaw fintech week" />
+        <meta property="og:title" content="Fintech Poland" />
 
         {/* <meta name="google-site-verification" content="sXaAUXlMVJRJLB7enpyrDeH_Tedgvf3gLXAJHL7VFv8" /> */}
 

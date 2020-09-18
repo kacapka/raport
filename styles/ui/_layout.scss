@@ -50,13 +50,48 @@
 }
 
 .button {
-  &-read-more {
-      @extend %extra-bold;
-      font-size: 20px;
-      color: $nav;
-  }  
+    &-read-more {
+        @extend %extra-bold;
+        font-size: 20px;
+        color: $nav;
+        cursor: pointer;
+    }  
+}
+
+.with-margin {
+    margin-bottom: 30px;
 }
 
 .ReactCollapse--collapse {
     transition: height 500ms;
-  }
+}
+
+@media all and (max-width: 1366px) {
+    .container {
+        width: 870px;
+    }
+    
+    .container--small {
+        width: 800px;
+    }  
+    
+    .button {
+        &-read-more {
+            font-size: 16px;
+        }  
+    }
+    .title {
+        font-size: 42px;
+    }
+    .header {
+        height: 320px;
+        padding-top: 50px;
+        h1 {
+            font-size: 34px;
+            line-height: 52px;
+        }
+    }
+    .with-margin {
+        margin-bottom: 20px;
+    }
+}

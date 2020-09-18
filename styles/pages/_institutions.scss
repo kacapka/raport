@@ -44,32 +44,20 @@
             &__wrapper {
                 @extend %subpage-desc;
                 margin-bottom: 30px;
-                font-size: 20px;
-                line-height: 30px;
             }
             &__title {
                 @extend %semi-bold;
-            }
-            &__desc {
-                // @extend %subpage-desc;
-            }    
+            }  
         }
     }
     .desc {
+        @extend %subpage-desc; 
         &-text {
-           @extend %medium;
-           font-size: 20px;
-           line-height: 30px; 
            margin-bottom: 30px;
         }
         &-list {
             margin-bottom: 30px;
             list-style: none;
-            li {
-                @extend %medium;
-                font-size: 20px;
-                line-height: 30px;
-            }
         }
         &--top {
             margin-top: 20px;

@@ -11,7 +11,7 @@ const Button = ({ onClick, className }) => {
 
     return (
         <div onClick={handleOnClick} className={classnames("button-read-more", className)}>
-            {!isOpen ? '↓ read more ↓' : '↑ hide ↑'}
+            {!isOpen ? '↓ read more ↓' : '↑ close ↑'}
         </div>
     );
 };

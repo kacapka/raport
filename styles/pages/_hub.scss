@@ -3,9 +3,6 @@
         margin: 20px auto 80px auto;
         &-text {
             @extend %subpage-desc;
-            &.with-margin {
-                margin-bottom: 30px;
-            }
         }
     }
     .features {
@@ -47,4 +44,40 @@
             }
         }
     }
+}
+
+@media all and (max-width: 1366px) {
+    .hub {
+        .desc {
+            margin: 20px auto 60px auto;
+        }
+        .features {
+            margin-bottom: 60px;
+            &-wrapper {
+                margin-top: 60px;
+            }
+            &-item {
+                &__icon {
+                    height: 50px;
+                    margin-bottom: 20px;
+                    .icon1 {
+                        width: 37px;
+                    }
+                    .icon2 {
+                        width: 48px;
+                    }
+                    .icon3 {
+                        width: 68px;
+                    }
+                    .icon4 {
+                        width: 52px;
+                    }
+                }
+                &__text {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }   
 }

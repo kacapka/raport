@@ -27,10 +27,23 @@
 }
 
 %subpage-desc {
-    @extend %medium;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     font-size: 20px;
     line-height: 30px;
     color: $dark
 }
+
+@media all and (max-width: 1366px) {
+    %subpage-desc {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: $dark
+    }    
+}
+
+
 
 

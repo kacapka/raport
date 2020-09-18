@@ -52,3 +52,31 @@
         }
     }
 }
+
+@media all and (max-width: 1366px) {
+    .nav {
+        &-list {
+            height: 60px;
+            &__item {
+                padding-top: 20px;
+                margin: 0 50px;
+                a {
+                    font-size: 15px;
+                }
+                .menu {
+                    &-list {
+                        padding: 0 20px;
+                        top: 60px;
+                        z-index: 99;
+                        li {
+                            padding: 5px 0;
+                            a {
+                                font-size: 13px;    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

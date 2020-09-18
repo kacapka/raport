@@ -34,3 +34,22 @@
         line-height: 18px;    
     }
 }
+
+@media all and (max-width: 1366px) {
+    .footer {
+        height: 80px;
+        &-logo {
+            width: 95px;
+        }
+        &-text {
+            p {
+                font-size: 11px;
+                line-height: 13px;  
+            }
+        }
+        &-email {
+            font-size: 11px;
+            line-height: 13px;    
+        }
+    }   
+}

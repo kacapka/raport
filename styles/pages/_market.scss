@@ -3,9 +3,6 @@
         margin: 20px auto 80px auto;
         &-text {
             @extend %subpage-desc;
-            &.with-margin {
-                margin-bottom: 30px;
-            }
         }
         &-logos {
             display: flex;
@@ -28,4 +25,29 @@
             }
         }
     }
+}
+
+@media all and (max-width: 1366px) {
+    .market {
+        .desc {
+            margin: 20px auto 60px auto;
+            &-logos {
+                margin-top: 60px;
+                &__logo {
+                    &--1 {
+                        width: 120px;
+                    }
+                    &--2 {
+                        width: 150px;
+                    }
+                    &--3 {
+                        width: 120px;    
+                    }
+                    &--4 {
+                        width: 135px;
+                    }
+                }
+            }
+        }
+    }   
 }

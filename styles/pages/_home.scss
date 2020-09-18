@@ -84,9 +84,6 @@
                 line-height: 30px;  
                 color: #fff; 
                 text-align: center;
-                &.with-margin {
-                    margin-bottom: 20px;
-                } 
             }
         }
     }
@@ -231,6 +228,7 @@
         background-color: $bgLight;
         position: relative;
         z-index: 2;
+        color: $dark;
         &-container {
             display: flex;
             flex-direction: column;
@@ -253,7 +251,7 @@
             @extend %extra-bold;
             font-size: 20px;
             line-height: 30px;
-            color: $purple;
+            color: $dark;
         }
         &-pasek {
             width: 100%;
@@ -263,4 +261,155 @@
             left: 0;
         }
     }
+}
+
+@media all and (max-width: 1366px) {
+    .home {
+        .hero {
+            height: calc(100vh - 60px);
+            &-container {
+                // padding: 100px 25px 0 25px;
+            } 
+            &-logo {
+                width: 165px;
+                margin-bottom: 30px;
+            }
+            h1 {
+                font-size: 56px;
+                line-height: 67px;
+            }
+            &-earth {
+                width: 430px;
+            }
+        }
+        .desc {
+            padding: 80px 0 100px 0;
+            &-text {
+                font-size: 22px;
+                line-height: 32px;  
+                width: 720px;
+            }
+            &-box {
+                width: 100%;
+                padding: 50px 0 30px 0;
+                margin: 100px 0 0 0;
+                &__text {
+                    font-size: 22px;
+                    line-height: 33px;
+                    width: 800px;  
+                }
+                &__frame {
+                    height: calc(100% + 60px);
+                    top: -30px;
+                }
+                &__button {
+                    margin-top: 20px;
+                }
+            }
+            &-collapse {
+                width: 800px;
+                margin-top: 30px;
+                &__text {
+                    font-size: 16px;
+                    line-height: 26px;  
+                }
+            }
+        }
+        .reports {
+            margin-bottom: 50px;
+            &-list {
+                margin: 70px 0 20px 0;
+                &__item {
+                    width: 195px;
+                    height: 195px;
+                    padding-top: 25px;
+                    margin-bottom: 50px;
+                    img {
+                        margin-bottom: 25px;
+                        height: 45px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+            &-banner {
+                height: 90px;
+            }
+        }
+        .partners {
+            &-list {
+                &__item {
+                    margin-bottom: 60px;
+                    h4 {
+                        font-size: 18px; 
+                        margin-bottom: 50px; 
+                    }
+                    h5 {
+                        font-size: 15px; 
+                        margin-bottom: 30px; 
+                    }
+                    .logo-text {
+                        font-size: 13px;
+                        line-height: 23px;
+                        margin: 0 80px;
+                    }
+                    // scale(0.75)
+                    .logo {
+                        width: 270px;
+                    }
+                    .logo1 {
+                        width: 210px;
+                        margin: 0 80px;
+                    }
+                    .logo2 {
+                        width: 160px;
+                        margin: 0 80px;
+                    }
+                    .logo3 {
+                        width: 140px;
+                    }
+                    .logo4 {
+                        width: 130px;
+                        margin: 0 200px;
+                    }
+                    .logo5 {
+                        width: 140px;
+                    }
+                    .logo6 {
+                        width: 85px;
+                    }
+                    .logo7 {
+                        width: 180px;
+                    }
+                    .logo8 {
+                        width: 80px;
+                        margin: 0 20px;
+                    }
+                    .logo9 {
+                        width: 150px;
+                        margin: 0 20px;
+                    }
+                }
+            }
+        }
+        .contact {
+            margin-top: 50px;
+            padding: 0 0 35px 0;
+            &-title {
+                font-size: 30px;
+                margin-bottom: 35px;
+            }   
+            &-text {
+                font-size: 15px;
+                line-height: 24px;
+                width: 680px;
+            } 
+            &-email {
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+    }   
 }

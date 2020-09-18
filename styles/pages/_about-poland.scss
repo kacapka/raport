@@ -200,14 +200,148 @@
             margin-bottom: 30px;
         }
         p {
-            @extend %medium;
-            font-size: 20px;
-            line-height: 36px;
+            color: #fff;
+            @extend %subpage-desc;
             text-align: center;
         }
         &-author {
             margin-top: 45px;
             width: 600px;
+        }
+    }
+}
+
+@media all and (max-width: 1366px) {
+    .about-poland {
+        .hero {
+            height: calc(100vh - 60px);
+            &-details {
+                margin-top: 70px;
+                &__item {
+                    margin-bottom: 25px;
+                    &__value {
+                        font-size: 30px;
+                        margin-right: 20px;
+                        width: 110px;
+                        sup {
+                            font-size: 18px;
+                        }
+                    }
+                    &__desc {
+                        font-size: 16px;
+                        top: 15px;
+                    }
+                }
+            }
+        } 
+        .content {
+            &-features {
+                margin: 20px 0 80px 0;
+                &__item {
+                    width: 195px;
+                    height: 195px;
+                    padding-top: 45px;
+                    color: #fff;
+                    &__title {
+                        font-size: 20px;
+                    }
+                    &__desc {
+                        font-size: 16px;
+                        line-height: 28px;
+                    }
+                }
+            }
+            h2 {
+                font-size: 28px;
+                margin-bottom: 60px;
+            }
+            &-list {
+                padding-left: 145px;
+                margin-bottom: 30px;
+                &__item {
+                    margin-bottom: 40px;
+                    &__icon {
+                        width: 120px;
+                        .icon1 {
+                            width: 54px;
+                        }
+                        .icon2 {
+                            width: 54px;
+                        }
+                        .icon3 {
+                            width: 28px;
+                        }
+                        .icon4 {
+                            width: 48px;
+                        }
+                    }
+                    &__title {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+                    &__desc {
+                        font-size: 16px;
+                        line-height: 32px;
+                    }
+                }
+            }
+            &-banner {
+                padding: 40px 0;
+                margin-bottom: 80px;
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 35px;
+                }   
+                &__wrapper {
+                    width: 740px;
+                }
+                &__value {
+                    font-size: 16px;   
+                    width: 120px; 
+                }
+                &__label {
+                    font-size: 16px;
+                }
+            }
+        }
+        .institutions {
+            &-container {
+                margin-bottom: 80px;
+            }
+            h2 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+            &-desc {
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 50px;
+                width: 620px;
+            }
+            &-wrapper {
+                &__map {
+                    width: 460px;
+                }
+                &__revoult {
+                    margin-bottom: 30px;
+                    width: 185px;
+                }
+                &__desc {
+                    font-size: 16px;
+                    line-height: 28px;
+                    width: 340px;  
+                }
+            }
+        }
+        .opinion {
+            padding: 40px 0;
+            h2 {
+                font-size: 24px;  
+            }
+            &-author {
+                margin-top: 20px;
+                width: 500px;
+            }
         }
     }
 }
