@@ -2,15 +2,16 @@
 import Title from '../shared/Title';
 
 import logo from '../../static/img/logo_black.png';
-import logo1 from '../../static/img/partners_logo_1.png';
+import logo1 from '../../static/img/knf_logo.jpg';
 import logo2 from '../../static/img/partners_logo_2.png';
-import logo3 from '../../static/img/partners_logo_3.png';
+import logo3 from '../../static/img/bird_logo.png';
 import logo4 from '../../static/img/partners_logo_4.jpg';
 import logo5 from '../../static/img/pko_logo.jpg';
 import logo6 from '../../static/img/alior_logo.png';
 import logo7 from '../../static/img/partners_logo_7.png';
 import logo8 from '../../static/img/partners_logo_8.png';
 import logo9 from '../../static/img/partners_logo_9.png';
+import logo10 from '../../static/img/accelpoint_logo.png';
 
 const Partners = () => {
     return (
@@ -43,13 +44,11 @@ const Partners = () => {
                         <h4>Partner:</h4>
                         <div className="partners-list__row">
                             <img src={logo6} alt="Alior Bank" className="logo6" />
+                            <img src={logo10} alt="Accelpoint" className="logo10" />
+                            <img src={logo7} alt="Cashless.pl" className="logo7" />
                         </div>
                     </div>
                     <div className="partners-list__row align-top">
-                        <div className="partners-list__item">
-                            <h5>Media Patronage:</h5>
-                            <img src={logo7} alt="Cashless.pl" className="logo7" />
-                        </div>
                         <div className="partners-list__item">
                             <h5>Scientific Patronage:</h5>
                             <p className="logo-text">

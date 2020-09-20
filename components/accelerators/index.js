@@ -1,5 +1,6 @@
 import SubpageHeader from '../shared/SubpageHeader';
 import List from './List';
+import Opinion from './Opinion';
 
 const Authorities = () => {
     return (
@@ -9,6 +10,7 @@ const Authorities = () => {
                 programmes
             </SubpageHeader>
             <List />
+            <Opinion />
         </div>
     );
 };

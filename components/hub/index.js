@@ -7,7 +7,7 @@ const Hub = () => {
         <div className="hub">
             <SubpageHeader>
                 innovation hub<br />
-                programmme
+                programme
             </SubpageHeader>
             <Desc />
             <Features />

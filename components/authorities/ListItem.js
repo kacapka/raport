@@ -12,11 +12,13 @@ const LisItem = ({ data: { logo, company, name, className }, children }) => {
     return (
         <div className="authorities-item">
             <div className="authorities-item__wrapper">
+                <div className="authorities-item__details">
+                    <p className="authorities-item__company">{company}</p>
+                    <p className="authorities-item__name">{name}</p>
+                </div>
                 <img src={logo} className={`authorities-item__logo authorities-item__logo-${className}`} />
-                <p className="authorities-item__company">{company}</p>
-                <p className="authorities-item__name">{name}</p>
-                <Button onClick={toggleItem} className="authorities-item__trigger" />
             </div>
+            <Button onClick={toggleItem} className="authorities-item__trigger" />
             <Collapse isOpened={isOpen}>
                 <div className="authorities-item__content">
                     {children}

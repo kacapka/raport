@@ -51,3 +51,27 @@
         }
     }   
 }
+
+@media all and (max-width: 1024px) {
+    .market {
+        .desc {
+            &-logos {
+                &__logo {
+                    &--1 {
+                        width: 100px;
+                    }
+                    &--2 {
+                        width: 120px;
+                    }
+                    &--3 {
+                        width: 100px;    
+                    }
+                    &--4 {
+                        width: 110px;
+                    }
+                }
+            }
+        }
+    }   
+}
+

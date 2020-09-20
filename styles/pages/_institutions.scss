@@ -65,5 +65,67 @@
         &--bottom {
             margin-bottom: 80px;
         }
+        &-button {
+            text-align: center;
+            margin: 30px 0;
+        }
     }
+}
+
+@media all and (max-width: 1366px) {
+    .institutions {
+        .accordion {
+            &-item {
+                &__trigger {
+                    padding: 0 30px 0 10px;
+                    height: 90px;
+                }
+                &__button {
+                    flex: 0 0 35px;
+                    width: 35px;
+                    height: 35px;
+                    img {
+                        width: 13px;
+                    }
+                }
+                &__label {
+                    font-size: 18px;
+                }
+                &__content {
+                    padding: 0 30px 30px 65px;
+                }
+                &__wrapper {
+                    margin: 50px 0;
+                }
+            }
+            &-content {
+                &__wrapper {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .desc {
+            &-text {
+               margin-bottom: 20px;
+            }
+            &-list {
+                margin-bottom: 20px;
+            }
+        }
+    }    
+}
+
+@media all and (max-width: 1024px) {
+    .institutions {
+        .accordion {
+            &-item {
+                &__trigger {
+                    padding: 0 10px;
+                }
+            }
+            &-wrapper {
+                margin: 0 0 60px 0;
+            }
+        }
+    }    
 }

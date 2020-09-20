@@ -1,0 +1,58 @@
+.opinion {
+    color: #fff;
+    padding: 60px 0;
+    background: $purple;
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
+        @extend %extra-bold;
+        font-size: 30px;  
+        margin-bottom: 30px;
+    }
+    p {
+        color: #fff;
+        @extend %subpage-desc;
+        text-align: center;
+    }
+    &-author {
+        margin-top: 45px;
+        width: 600px;
+    }
+    &-button {
+        margin-top: 30px;
+    }
+    &-content {
+        margin-top: 30px;
+    }
+}
+
+@media all and (max-width: 1366px) {
+    .opinion {
+        padding: 40px 0;
+        h2 {
+            font-size: 24px;  
+        }
+        &-author {
+            margin-top: 20px;
+            width: 500px;
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .opinion {
+        h2 {
+            font-size: 22px;  
+        }
+        p {
+            font-size: 14px;    
+            line-height: 21px; 
+        }
+        &-author {
+            width: 450px;
+        }
+    }   
+}

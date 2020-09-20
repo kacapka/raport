@@ -10,8 +10,10 @@ import icon6 from '../../static/img/reports_icon_6.png';
 import icon7 from '../../static/img/reports_icon_7.png';
 import icon8 from '../../static/img/reports_icon_8.png';
 import Link from "next/link";
+import useMedia from '../hooks/useMedia';
 
 const Reports = () => {
+    const { isMobile } = useMedia();
     return (
         <section className="reports">
             <div className="container reports-container">
@@ -19,7 +21,10 @@ const Reports = () => {
                 <div className="reports-list">
                     <Link href="/about-poland">
                         <div className="reports-list__item">
-                            <img src={icon1} alt="aboit poland" />
+                            <div className="reports-list__item__icon">
+
+                                <img src={icon1} alt="aboit poland" />
+                            </div>
                             <p>
                                 About <br />
                                 Poland
@@ -27,22 +32,33 @@ const Reports = () => {
                         </div>
                     </Link>
                     <div className="reports-list__item">
-                        <img src={icon2} alt="financial sector" />
+                        <div className="reports-list__item__icon">
+
+                            <img src={icon2} alt="financial sector" />
+                        </div>
                         <p>
                             The Polish <br />
                             financial sector
                         </p>
                     </div>
-                    <div className="reports-list__item">
-                        <img src={icon3} alt="Polish FinTechs" />
-                        <p>
-                            Map of <br />
-                            Polish FinTechs
-                        </p>
-                    </div>
+                    <Link href="/map-of-polish-fintechs">
+                        <div className="reports-list__item">
+                            <div className="reports-list__item__icon">
+
+                                <img src={icon3} alt="Polish FinTechs" />
+                            </div>
+                            <p>
+                                Map of <br />
+                                Polish FinTechs
+                            </p>
+                        </div>
+                    </Link>
                     <Link href="/regulatory-and-supervisory-authorities">
                         <div className="reports-list__item">
-                            <img src={icon4} alt="authorities" />
+                            <div className="reports-list__item__icon">
+
+                                <img src={icon4} alt="authorities" />
+                            </div>
                             <p>
                                 Regulatory <br />
                                 and supervisory <br />
@@ -52,7 +68,10 @@ const Reports = () => {
                     </Link>
                     <Link href="/financial-institutions-in-poland">
                         <div className="reports-list__item">
-                            <img src={icon5} alt="institutions" />
+                            <div className="reports-list__item__icon">
+
+                                <img src={icon5} alt="institutions" />
+                            </div>
                             <p>
                                 Financial  <br />
                                 institutions <br />
@@ -62,7 +81,10 @@ const Reports = () => {
                     </Link>
                     <Link href="/ue-financial-market">
                         <div className="reports-list__item">
-                            <img src={icon6} alt="UE financial market" />
+                            <div className="reports-list__item__icon">
+
+                                <img src={icon6} alt="UE financial market" />
+                            </div>
                             <p>
                                 Poland as a gateway <br />
                                 to the UE financial <br />
@@ -72,7 +94,10 @@ const Reports = () => {
                     </Link>
                     <Link href='/accelerators-and-acceleration-programmes'>
                         <div className="reports-list__item">
-                            <img src={icon7} alt="Accelerators" />
+                            <div className="reports-list__item__icon">
+
+                                <img src={icon7} alt="Accelerators" />
+                            </div>
                             <p>
                                 Accelerators  <br />
                                 and acceleration< br />
@@ -80,9 +105,12 @@ const Reports = () => {
                             </p>
                         </div>
                     </Link>
-                    <Link href="/innovation-hub-programmme">
+                    <Link href="/innovation-hub-programme">
                         <div className="reports-list__item">
-                            <img src={icon8} alt="Innovation" />
+                            <div className="reports-list__item__icon">
+
+                                <img src={icon8} alt="Innovation" />
+                            </div>
                             <p>
                                 Innovation <br />
                                 Hub

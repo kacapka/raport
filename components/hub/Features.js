@@ -4,7 +4,6 @@ import icon3 from '../../static/img/hub_icon_3.png';
 import icon4 from '../../static/img/hub_icon_4.png';
 
 const Features = () => {
-
     return (
         <div className="container--small features">
             <div className="features-wrapper">
@@ -13,9 +12,9 @@ const Features = () => {
                         <img src={icon1} className="icon1" />
                     </div>
                     <p className="features-item__text">
-                        Direct contact <br />
-                        with representatives <br />
-                        of the supervisory <br />
+                        Direct contact
+                        with representatives
+                        of the supervisory
                         authority
                     </p>
                 </div>
@@ -24,8 +23,8 @@ const Features = () => {
                         <img src={icon2} className="icon2" />
                     </div>
                     <p className="features-item__text">
-                        Easy and quick way <br />
-                        of applying for <br />
+                        Easy and quick way
+                        of applying for
                         the Programme
                     </p>
                 </div>
@@ -34,8 +33,8 @@ const Features = () => {
                         <img src={icon3} className="icon3" />
                     </div>
                     <p className="features-item__text">
-                        Possibility <br />
-                        of organising <br />
+                        Possibility
+                        of organising
                         a working meeting
                     </p>
                 </div>
@@ -44,9 +43,9 @@ const Features = () => {
                         <img src={icon4} className="icon4" />
                     </div>
                     <p className="features-item__text">
-                        Possibility of using <br />
-                        the know-how of <br />
-                        the UKNF <br />
+                        Possibility of using
+                        the know-how of
+                        the UKNF
                         representatives
                     </p>
                 </div>

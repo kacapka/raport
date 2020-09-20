@@ -5,6 +5,7 @@ import bnp from '../../static/img/bnp_logo.png';
 import rbl from '../../static/img/rbl_logo.png';
 import mbank from '../../static/img/mbank_accelerator_logo.png';
 import poladnPrize from '../../static/img/poland_prize_logo.png';
+import accelpoint from '../../static/img/accelpoint_logo.png';
 
 import LisItem from '../authorities/ListItem';
 
@@ -90,6 +91,19 @@ const PolandPrizeContent = () => {
     );
 };
 
+const AccelpointContent = () => {
+    return (
+        <Fragment>
+            <p className="with-margin">
+                Accelpoint Accelerator is a Smart Tech accelerator that has been operating successfully in the Central Eastern Europe (CEE) Region since 2018. We work with top business mentors and international partners from Europe & Asia. Accelpoint participates in obtaining VC financing in the CEE region and abroad focusing on industries like FinTech, MedTech and CleanTech. We have managed almost 10 million USD in acceleration programs conducted in cooperation with the National Center for Research and Development (NCBIR), Polish Agency for Enterprise Development (PARP) and EU Programs. Our distinguishing feature is 20+ years of international experience in Product Design & Development as well as experience in executive roles in global corporations: Deloitte CE, PWC, BNP Paribas. Also, it is our mission for the accelerator’s founders and management team to have a successful track record of being serial entrepreneurs.
+            </p>
+            <p >
+                Accelpoint is currently running two acceleration programs: AccelBox, which is a program addressed to pre-seed projects in the field of MedTech, CleanTech and GovTech and AccelUp - a program focused on mature startups in the area of FinTech, InsurTech and telco, seeking support in scaling their business globally.
+            </p>
+        </Fragment>
+    );
+};
+
 const data = [
     {
         className: '6',
@@ -120,11 +134,18 @@ const data = [
         content: <MbankContent />
     },
     {
-        className: '20',
+        className: '10',
         logo: poladnPrize,
         name: null,
         company: 'Poland Prize',
         content: <PolandPrizeContent />
+    },
+    {
+        className: '11',
+        logo: accelpoint,
+        name: null,
+        company: 'Accelpoint',
+        content: <AccelpointContent />
     }
 ];
 

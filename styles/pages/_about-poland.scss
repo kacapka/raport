@@ -185,30 +185,6 @@
             }
         }
     }
-    .opinion {
-        color: #fff;
-        padding: 60px 0;
-        background: $purple;
-        &-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        h2 {
-            @extend %extra-bold;
-            font-size: 30px;  
-            margin-bottom: 30px;
-        }
-        p {
-            color: #fff;
-            @extend %subpage-desc;
-            text-align: center;
-        }
-        &-author {
-            margin-top: 45px;
-            width: 600px;
-        }
-    }
 }
 
 @media all and (max-width: 1366px) {
@@ -333,14 +309,92 @@
                 }
             }
         }
-        .opinion {
-            padding: 40px 0;
-            h2 {
-                font-size: 24px;  
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .about-poland {
+        .hero {
+            height: 600px;
+            &-details {
+                margin-top: 50px;
+                &__item {
+                    margin-bottom: 30px;
+                }
             }
-            &-author {
-                margin-top: 20px;
-                width: 500px;
+        } 
+        .content {
+            &-features {
+                margin: 0 0 70px 0;
+                &__item {
+                    width: 150px;
+                    height: 150px;
+                    padding-top: 35px;
+                    &__title {
+                        font-size: 16px;
+                    }
+                    &__desc {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+            h2 {
+                font-size: 26px;
+            }
+            &-list {
+                padding-left: 70px;
+            }
+            &-banner {
+                h3 {
+                    font-size: 22px;
+                    margin-bottom: 25px;
+                }   
+                &__wrapper {
+                    width: 640px;
+                }
+                &__value {
+                    font-size: 14px;   
+                    width: 105px; 
+                }
+                &__label {
+                    font-size: 14px;
+                }
+            }
+        }
+        .institutions {
+            &-container {
+                margin-bottom: 80px;
+            }
+            h2 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+            &-desc {
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 50px;
+                width: 620px;
+            }
+            &-wrapper {
+                flex-direction: column;
+                &__map {
+                    width: 460px;
+                }
+                &__revoult {
+                    margin: 0 50px 0 0;
+                    width: 165px;
+                }
+                &__desc {
+                    width: 450px;
+                    text-align: left;  
+                    margin-bottom: 0;
+                }
+                &__box {
+                    margin-top: 50px;
+                    flex-direction: row;
+                    align-items: flex-start;
+                }
             }
         }
     }

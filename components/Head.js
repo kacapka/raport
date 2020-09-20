@@ -8,7 +8,7 @@ const Head = props => (
         <meta name="robots" content="index, follow"></meta>
         <meta
             name="keywords"
-            content="Fintech, fintech poland, innovation hub programmme, financial market, financial institutions, fintech report"
+            content="Fintech, fintech poland, innovation hub programme, financial market, financial institutions, fintech report"
         ></meta>
         <meta
             name="description"

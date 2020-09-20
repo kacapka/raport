@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-import knf from '../../static/img/knf_logo.png';
+import knf from '../../static/img/knf_logo.jpg';
 import nbp from '../../static/img/nbp_logo.png';
 import mf from '../../static/img/mf_logo.png';
 import puodo from '../../static/img/puodo_logo.png';
@@ -61,7 +61,8 @@ const GiifContent = () => {
     return (
         <Fragment>
             <p className="with-margin">
-                The GIIF is the most important authority responsible for counteracting money laundering and the financing of terrorism (AML/CTF). The main competences of the GIIF are:            </p>
+                The GIIF is the most important authority responsible for counteracting money laundering and the financing of terrorism (AML/CTF). The main competences of the GIIF are:
+            </p>
             <ul>
                 <li>• supervision over the fulfilment of AML/CTF duties by the obliged entities (mostly financial institutions),</li>
                 <li>• preparing of the National AML/CTF Risk Assessment,</li>
@@ -76,7 +77,8 @@ const PuodoContent = () => {
     return (
         <Fragment>
             <p className="with-margin">
-                The PUODO is responsible for supervision and enforcement over the fulfilment of data protection by any entities (private and public) processing personal data. The main competences of PUODO are:            </p>
+                The PUODO is responsible for supervision and enforcement over the fulfilment of data protection by any entities (private and public) processing personal data. The main competences of PUODO are:
+            </p>
             <ul>
                 <li>• conducting controls regarding the data processing,</li>
                 <li>• conducting proceedings regarding infringement of personal data protection regulations,</li>

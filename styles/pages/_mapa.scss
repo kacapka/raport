@@ -1,0 +1,17 @@
+.map {
+    &-label {
+
+    }
+    &-list {
+        &__item {
+            display: flex;
+            // height: 46px;
+            padding: 10px;
+            flex-wrap: wrap;
+            &__logo {
+                height: 100%;
+                margin: 0 20px;
+            }
+        }
+    }
+}

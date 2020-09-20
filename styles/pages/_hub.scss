@@ -55,8 +55,10 @@
             margin-bottom: 60px;
             &-wrapper {
                 margin-top: 60px;
+                flex-direction: column;
             }
             &-item {
+                flex-direction: row;
                 &__icon {
                     height: 50px;
                     margin-bottom: 20px;
@@ -74,8 +76,40 @@
                     }
                 }
                 &__text {
+                    flex: 1;
                     font-size: 16px;
                     line-height: 26px;
+                }
+            }
+        }
+    }   
+}
+@media all and (max-width: 1024px) {
+    .hub {
+        .features {
+            &-item {
+                margin-bottom: 30px;
+                &__icon {
+                    width: 100px;
+                    display: flex;
+                    justify-content: center;
+                    height: auto;
+                    margin-bottom: 0;
+                    .icon1 {
+                        width: 34px;
+                    }
+                    .icon2 {
+                        width: 37px;
+                    }
+                    .icon3 {
+                        width: 55px;
+                    }
+                    .icon4 {
+                        width: 43px;
+                    }
+                }
+                &__text {
+                    text-align: left;
                 }
             }
         }
