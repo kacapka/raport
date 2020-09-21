@@ -1,30 +1,30 @@
 import ListItem from './ListItem';
-import Bank from './components/Bank';
+import * as Components from './components';
 
 const List = () => {
     return (
         <div className="container--small">
             <div className="accordion-wrapper">
                 <ListItem title="Bank">
-                    <Bank />
+                    <Components.Bank />
                 </ListItem>
                 <ListItem title="Insurance company">
-                    <p>asdasdsadad</p>
+                    <Components.Insurance />
                 </ListItem>
                 <ListItem title="Brokerage house">
-                    <p>asdasdsadad</p>
+                    <Components.Brokerage />
                 </ListItem>
                 <ListItem title="National payment institution, including a national payment institution providing only services consisting in initiating payment transactions">
-                    <p>asdasdsadad</p>
+                    <Components.Payment />
                 </ListItem>
                 <ListItem title="The provider only provides the services enabling access to account information">
-                    <p>asdasdsadad</p>
+                    <Components.Provider />
                 </ListItem>
                 <ListItem title="Electronic money institution">
-                    <p>asdasdsadad</p>
+                    <Components.Electronic />
                 </ListItem>
                 <ListItem title="Lending institution">
-                    <p>asdasdsadad</p>
+                    <Components.Lending />
                 </ListItem>
             </div>
         </div>

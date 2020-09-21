@@ -2,10 +2,12 @@ import React, { Fragment } from 'react';
 import Head from '../components/Head';
 import AboutPolandPage from '../components/aboutPoland';
 import "../styles/index.scss";
+import MobileLogo from '../components/shared/MobileLogo';
 
 const AboutPoland = () => (
     <Fragment>
         <Head title="About Poland" />
+        <MobileLogo purple />
         <AboutPolandPage />
     </Fragment>
 );

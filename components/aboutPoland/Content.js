@@ -13,7 +13,12 @@ const data = [
     { value: '86', label: 'Fortune 500 companies trusted Poland with their Buissness Centres' },
 ];
 
+import useMedia from '../hooks/useMedia';
+import CollapseContent from '../shared/CollapseContent';
+
 const Content = () => {
+    const { isMobile } = useMedia();
+
     const renderData = () => {
         return data.map(item => {
             return (
@@ -110,8 +115,8 @@ const Content = () => {
             <div className="content-banner">
                 <div className="content-banner__wrapper">
                     <h3>QUALITY MATTERS IN POLAND</h3>
-                    <div>
-                        {renderData()}
+                    <div className="content-banner__list">
+                        {isMobile ? <CollapseContent buttonColor="white">{renderData()}</CollapseContent> : renderData()}
                     </div>
                 </div>
             </div>

@@ -100,7 +100,7 @@ const Reports = () => {
                             </div>
                             <p>
                                 Accelerators  <br />
-                                and acceleration< br />
+                                and acceleration < br />
                                 programmes
                             </p>
                         </div>

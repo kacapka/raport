@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import classnames from 'classnames';
 
-const Button = ({ onClick, className }) => {
+const Button = ({ onClick, className, buttonColor }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleOnClick = () => {
@@ -9,8 +9,10 @@ const Button = ({ onClick, className }) => {
         onClick(!isOpen);
     };
 
+    console.log(className);
+
     return (
-        <div onClick={handleOnClick} className={classnames("button-read-more", className)}>
+        <div onClick={handleOnClick} className={classnames("button-read-more", { [`button-read-more--${buttonColor}`]: buttonColor, [className]: className })}>
             {!isOpen ? '↓ read more ↓' : '↑ close ↑'}
         </div>
     );

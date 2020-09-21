@@ -55,6 +55,10 @@
         font-size: 20px;
         color: $nav;
         cursor: pointer;
+        text-align: center;
+        &--white {
+            color: #fff;    
+        }
     }  
 }
 
@@ -64,6 +68,18 @@
 
 .ReactCollapse--collapse {
     transition: height 500ms;
+}
+
+.mobile-logo {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 175px;
+    z-index: 1;
+    &--nav {
+        z-index: 11;    
+    }
 }
 
 @media all and (max-width: 1366px) {
@@ -100,11 +116,9 @@
     .container {
         width: 670px;
     }
-    
     .container--small {
         width: 670px;
     }  
-    
     .button {
         &-read-more {
             font-size: 15px;
@@ -121,37 +135,67 @@
             line-height: 48px;
         }
     }
-    // .with-margin {
-    //     margin-bottom: 20px;
-    // }
 }
 
 @media all and (max-width: 767px) {
     .container {
         width: 435px;
     }
-    
     .container--small {
         width: 435px;
     }  
-    
     .button {
         &-read-more {
             font-size: 18px;
         }  
     }
-    // .title {
-    //     font-size: 36px;
-    // }
     .header {
-        height: 320px;
-        padding-top: 75px;
+        height: 400px;
+        padding-top: 160px;
         h1 {
-            font-size: 32px;
-            line-height: 48px;
+            width: 400px;
+            font-size: 30px;
+            line-height: 40px;
         }
     }
-    // .with-margin {
-    //     margin-bottom: 20px;
-    // }
+    .mobile-logo {
+        display: block;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    } 
+    .container--small {
+        width: 100%;
+        padding: 0 20px;
+    }   
+    .button {
+        &-read-more {
+            font-size: 12px;
+        }  
+    }
+    .title {
+        font-size: 24px;
+    }
+    .header {
+        height: 250px;
+        padding-top: 100px;
+        h1 {
+            width: 100%;
+            padding: 0 20px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    .mobile-logo {
+        top: 20px;
+        left: 20px;
+        width: 120px;
+    }
+    .with-margin {
+        margin-bottom: 10px;
+    }
 }

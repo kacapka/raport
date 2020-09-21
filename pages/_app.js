@@ -2,6 +2,7 @@ import React from 'react';
 import App from 'next/app';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import MobileNav from '../components/shared/MobileNav';
 
 class MyApp extends App {
     render() {
@@ -10,6 +11,7 @@ class MyApp extends App {
         return (
             <React.Fragment>
                 <Nav />
+                <MobileNav />
                 <Component {...pageProps} />
                 <Footer />
             </React.Fragment>

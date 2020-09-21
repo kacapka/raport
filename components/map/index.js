@@ -1,5 +1,5 @@
 import SubpageHeader from '../shared/SubpageHeader';
-import List from './List';
+import Mapa from './Map';
 
 const Map = () => {
     return (
@@ -7,7 +7,7 @@ const Map = () => {
             <SubpageHeader>
                 Map of Polish Fintechs
             </SubpageHeader>
-            <List />
+            <Mapa />
         </div>
     );
 };
