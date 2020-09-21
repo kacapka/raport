@@ -31,16 +31,18 @@ const Reports = () => {
                             </p>
                         </div>
                     </Link>
-                    <div className="reports-list__item">
-                        <div className="reports-list__item__icon">
+                    <Link href="/the-polish-financial-sector">
+                        <div className="reports-list__item">
+                            <div className="reports-list__item__icon">
 
-                            <img src={icon2} alt="financial sector" />
+                                <img src={icon2} alt="financial sector" />
+                            </div>
+                            <p>
+                                The Polish <br />
+                                financial sector
+                            </p>
                         </div>
-                        <p>
-                            The Polish <br />
-                            financial sector
-                        </p>
-                    </div>
+                    </Link>
                     <Link href="/map-of-polish-fintechs">
                         <div className="reports-list__item">
                             <div className="reports-list__item__icon">

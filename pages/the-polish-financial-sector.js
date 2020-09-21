@@ -1,15 +1,15 @@
 import React, { Fragment } from 'react';
 import Head from '../components/Head';
 import "../styles/index.scss";
-import HubPage from '../components/hub';
+import SectorPage from '../components/sector';
 import MobileLogo from '../components/shared/MobileLogo';
 
-const InnovationHubProgramme = () => (
+const ThePolishFinancialSector = () => (
     <Fragment>
-        <Head title="Innovation hub programme" />
+        <Head title="The Polish financial sector" />
         <MobileLogo />
-        <HubPage />
+        <SectorPage />
     </Fragment>
 );
 
-export default InnovationHubProgramme;
+export default ThePolishFinancialSector;

@@ -1,5 +1,6 @@
 import logo from '../../static/img/logo_white.png';
 import earth from '../../static/img/hero_earth.png';
+import pasek from '../../static/img/subpage_pasek_desktop.png';
 
 const Hero = () => {
     return (
@@ -16,6 +17,7 @@ const Hero = () => {
                 <div>
                     <img src={earth} className="hero-earth" alt="earth" />
                 </div>
+                <img src={pasek} className="hero-pasek" />
             </div>
         </section>
     );

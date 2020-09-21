@@ -1,5 +1,5 @@
 import ListItem from './ListItem';
-import * as Components from './components';
+import * as Components from './components/Index';
 
 const List = () => {
     return (
