@@ -15,7 +15,7 @@ const Head = props => (
             content="A week of high-class events dedicated to the financial innovation sector."
         />
 
-        <link rel="canonical" href="https://www.warsawfintechweek.pl/" />
+        <link rel="canonical" href="https://www.fintechinpoland.pl/" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 

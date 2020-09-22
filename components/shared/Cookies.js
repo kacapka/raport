@@ -8,7 +8,7 @@ const CookiesWrapper = () => {
             buttonText="Close"
             cookieName="fintechAgree"
             style={{ background: "#625093" }}
-            buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+            buttonStyle={{ color: "#625093", fontSize: "13px", backgroundColor: '#fff' }}
             expires={150}
         >
             <p className="cookies-text">

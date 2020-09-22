@@ -8,7 +8,7 @@ const Partners = () => {
     return (
         <div className="partners">
             <SubpageHeader>
-                Partners
+                Partners & Authors
             </SubpageHeader>
             <PartnersLogos />
             <Bird />
