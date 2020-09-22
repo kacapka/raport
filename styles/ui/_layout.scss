@@ -82,6 +82,15 @@
     }
 }
 
+.cookies {
+    &-text {
+        font-size: 12px;
+        a {
+            color: $green;
+        }
+    }
+}
+
 @media all and (max-width: 1366px) {
     .container {
         width: 870px;

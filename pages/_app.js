@@ -3,6 +3,7 @@ import App from 'next/app';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import MobileNav from '../components/shared/MobileNav';
+import Cookies from '../components/shared/Cookies';
 
 class MyApp extends App {
     render() {
@@ -14,6 +15,7 @@ class MyApp extends App {
                 <MobileNav />
                 <Component {...pageProps} />
                 <Footer />
+                <Cookies />
             </React.Fragment>
         )
     }

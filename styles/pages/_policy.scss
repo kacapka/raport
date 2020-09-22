@@ -1,0 +1,18 @@
+.policy {
+    .content {
+        padding: 40px 0;
+        &-text {
+            @extend %subpage-desc;
+            font-weight: 300;
+        }
+        &-title {
+            @extend %subpage-desc;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+        a {
+            color: $purple;
+            text-decoration: underline !important;
+        }
+    }
+}
