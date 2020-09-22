@@ -25,6 +25,8 @@ module.exports = withImages(
                 "/partners": { page: "/partners" },
                 "/ue-financial-market": { page: "/ue-financial-market" },
                 "/the-polish-financial-sector": { page: "/the-polish-financial-sector" },
+                "/privacy-policy": { page: "/privacy-policy" },
+                "/contact": { page: "/contact" },
             };
         }
     })
