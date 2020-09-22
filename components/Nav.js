@@ -39,12 +39,20 @@ const Nav = () => {
 					</Link>
 				</li>
 				{
-					pathname === "/" && (
+					pathname === "/" ? (
 						<li className="nav-list__item">
 							<Scroll.Link className="elo" to="home_contact" spy={true} smooth={true} offset={50} duration={1000}>
 								Contact
 							</Scroll.Link>
 						</li>
+					) : (
+						<li className="nav-list__item">
+							<Link href="/contact">
+								<a>
+									Contact
+								</a>
+							</Link>
+						</li>	
 					)
 				}
 				<li className="nav-list__item">

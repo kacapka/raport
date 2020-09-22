@@ -1,0 +1,135 @@
+.contact {
+    margin-top: 200px;
+    padding: 0 0 60px 0;
+    background-color: $bgLight;
+    position: relative;
+    z-index: 2;
+    color: $dark;
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-title {
+        @extend %black;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }   
+    &-text {
+        text-align: center;
+        @extend %medium;
+        font-size: 20px;
+        line-height: 30px;
+        width: 900px;
+    } 
+    &-email {
+        @extend %extra-bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: $dark;
+    }
+    &-pasek {
+        width: 100%;
+        position: absolute;
+        bottom: calc(100% - 20px);
+        z-index: -1;
+        left: 0;
+    }
+    &--full {
+        padding: 0;
+        margin: 0;
+        height: calc(100vh - 180px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 1366px) {
+    .contact {
+        margin-top: 50px;
+        padding: 0 0 35px 0;
+        &-title {
+            font-size: 30px;
+            margin-bottom: 35px;
+        }   
+        &-text {
+            font-size: 15px;
+            line-height: 24px;
+            width: 680px;
+        } 
+        &-email {
+            font-size: 15px;
+            line-height: 24px;
+        }
+        &--full {
+            padding: 0;
+            margin: 0;
+            height: calc(100vh - 130px);
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .contact {
+        margin-top: 0;
+        padding: 20px 0 40px 0;
+        &-title {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }   
+        &-text {
+            width: 670px;
+        } 
+    }
+}
+
+@media all and (max-width: 767px) {
+    .contact {
+        padding: 50px 0;
+        &-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }   
+        &-text {
+            font-size: 22px;
+            line-height: 35px;
+            width: 435px;
+        } 
+        &-email {
+            font-size: 22px;
+            line-height: 35px;
+            margin-top: 30px;
+        } 
+        &--full {
+            height: calc(100vh - 200px);
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .contact {
+        padding: 40px 0;
+        &-title {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }   
+        &-text {
+            font-size: 15px;
+            line-height: 22px;
+            width: 100%;
+            padding: 0 20px;
+        } 
+        &-email {
+            font-size: 15px;
+            line-height: 22px;
+            margin-top: 20px;
+        } 
+        &--full {
+            height: auto;
+            padding: 100px 0;
+            min-height: calc(100vh - 210px);
+        }
+    }
+}

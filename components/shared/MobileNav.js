@@ -67,13 +67,21 @@ const MobileNav = () => {
                                 </Link>
                             </li>
                             {
-                                pathname === "/" && (
+                                pathname === "/" ? (
                                     <li>
                                         <Scroll.Link className="elo" to="home_contact" spy={true} smooth={true} offset={50} duration={1000} onClick={closeNav}>
                                             Contact
 							            </Scroll.Link>
                                     </li>
-                                )
+                                ) : (
+                                        <li>
+                                            <Link href="/contact">
+                                                <a onClick={closeNav}>
+                                                    Contact
+								                </a>
+                                            </Link>
+                                        </li>
+                                    )
                             }
                             <li>
                                 <a href="https://fintech-in-poland.s3.eu-central-1.amazonaws.com/how-to-fintech-in-poland.pdf" download target="_blank" onClick={closeNav}>
