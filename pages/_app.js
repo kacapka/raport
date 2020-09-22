@@ -10,10 +10,11 @@ class MyApp extends App {
 
         return (
             <React.Fragment>
-                <Nav />
+                <h1>In progress</h1>
+                {/* <Nav />
                 <MobileNav />
                 <Component {...pageProps} />
-                <Footer />
+                <Footer /> */}
             </React.Fragment>
         )
     }
