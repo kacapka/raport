@@ -1,4 +1,6 @@
 import SubpageHeader from '../shared/SubpageHeader';
+import Content from './Content';
+import Opinion from './Opinion';
 
 const Sector = () => {
     return (
@@ -6,7 +8,8 @@ const Sector = () => {
             <SubpageHeader>
                 The Polish financial sector
             </SubpageHeader>
-            IN PROGRESS
+            <Content />
+            <Opinion />
         </div>
     );
 };

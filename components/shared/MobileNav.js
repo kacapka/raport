@@ -49,7 +49,7 @@ const MobileNav = () => {
                                 <Collapse isOpened={isSubNav}>
                                     <ul className="sub-menu">
                                         <li><Link href="/about-poland"><a onClick={closeNav}>About Poland</a></Link></li>
-                                        <li><Link href="/about-poland"><a onClick={closeNav}>The Polish financial sector</a></Link></li>
+                                        <li><Link href="/the-polish-financial-sector"><a onClick={closeNav}>The Polish financial sector</a></Link></li>
                                         <li><Link href="/map-of-polish-fintechs"><a onClick={closeNav}>Map of Polish FinTechs</a></Link></li>
                                         <li><Link href="/regulatory-and-supervisory-authorities"><a onClick={closeNav}>Regulatory and supervisory authorities</a></Link></li>
                                         <li><Link href="/financial-institutions-in-poland"><a onClick={closeNav}>Financial institutions in Poland</a></Link></li>

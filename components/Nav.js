@@ -22,7 +22,7 @@ const Nav = () => {
 					</a>
 					<ul className="menu-list">
 						<li><Link href="/about-poland"><a>About Poland</a></Link></li>
-						<li><Link href="/about-poland"><a>The Polish financial sector</a></Link></li>
+						<li><Link href="/the-polish-financial-sector"><a>The Polish financial sector</a></Link></li>
 						<li><Link href="/map-of-polish-fintechs"><a>Map of Polish FinTechs</a></Link></li>
 						<li><Link href="/regulatory-and-supervisory-authorities"><a>Regulatory and supervisory authorities</a></Link></li>
 						<li><Link href="/financial-institutions-in-poland"><a>Financial institutions in Poland</a></Link></li>

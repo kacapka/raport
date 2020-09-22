@@ -1,0 +1,171 @@
+.sector {
+    .content {
+        padding: 70px 0;
+        &-row {
+            display: flex;
+            margin-bottom: 75px;
+            align-items: center;
+            &__left {
+                flex: 0 0 50%;
+            }
+            &__right {
+                flex: 0 0 50%;
+                padding-left: 70px; 
+            }
+        }
+        &-text {
+            @extend %subpage-desc;
+            span {
+                @extend %extra-bold;    
+            }
+        }
+        &-bottom {
+            h3 {
+                @extend %black;  
+                font-size: 26px;
+                line-height: 36px;
+                text-align: center;
+                margin-bottom: 40px;  
+            }
+        }
+
+        &-chart1 {
+            width: 100%;
+        }
+        &-chart2 {
+            width: 100%;
+        }
+        &-chart3 {
+            width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 1366px) {
+    .sector {
+        .content {
+            padding: 60px 0;
+            &-row {
+                margin-bottom: 50px;
+                &--top {
+                    flex-direction: column-reverse;
+                    .content-row__right {
+                        padding-left: 0;
+                        margin-bottom: 60px;
+                    }
+                }
+                &--bottom {
+                    .content-row__right {
+                        padding-left: 40px;
+                    }
+                }
+            }
+            &-bottom {
+                h3 {
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-bottom: 50px;  
+                }
+            }
+            &-chart1 {
+                width: 530px;
+            }
+        }
+    }    
+}
+
+@media all and (max-width: 1024px) {
+    .sector {
+        .content {
+            padding: 40px 0;
+            &-row {
+                &--bottom {
+                    .content-row__right {
+                        flex: 0 0 60%;
+                    }
+                    .content-row__left {
+                        flex: 0 0 40%;
+                    }
+                }
+            }
+            &-bottom {
+                h3 {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    } 
+}
+
+@media all and (max-width: 767px) {
+    .sector {
+        .content {
+            padding: 40px 0;
+            &-row {
+                &--top {
+                    .content-row__right {
+                        margin-bottom: 40px; 
+                    }   
+                }
+                &--bottom {
+                    flex-direction: column;
+                    .content-row__right {
+                        flex: none;
+                        padding-left: 0;
+                    }
+                    .content-row__left {
+                        flex: none;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            &-bottom {
+                h3 {
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-bottom: 30px;
+                }
+            }
+            &-chart1 {
+                width: 430px;
+            }
+            &-chart2 {
+                width: 430px;
+            }
+        }
+    } 
+}
+
+@media all and (max-width: 500px) {
+    .sector {
+        .content {
+            padding: 30px 20px;
+            &-row {
+                &--top {
+                    .content-row__right {
+                        margin-bottom: 30px; 
+                    }   
+                }
+                &--bottom {
+                    .content-row__left {
+                        flex: none;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            &-bottom {
+                h3 {
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+            }
+            &-chart1 {
+                width: 100%;
+            }
+            &-chart2 {
+                width: 100%;
+            }
+        }
+    } 
+}

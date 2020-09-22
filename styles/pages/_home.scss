@@ -1,6 +1,6 @@
 .home {
     .hero {
-        height: calc(100vh - 150px);
+        height: calc(100vh - 80px);
         background-image: linear-gradient(#744ab7, #3b1f69);
         position: relative;
         &-container {
@@ -221,6 +221,10 @@
                     width: 200px;
                     margin: 0 100px 0 50px;
                 }
+                .logo11 {
+                    width: 130px;
+                    margin: 0 0 0 100px;
+                }
             }
             &__images-wrapper {
                 display: flex;
@@ -409,6 +413,9 @@
                     .logo10 {
                         width: 150px;
                     }
+                    .logo11 {
+                        width: 100px;
+                    }
                 }
             }
         }
@@ -510,6 +517,9 @@
                     }
                     .logo10 {
                         margin-right: 70px;
+                    }
+                    .logo11 {
+                        margin: 0 0 0 50px;
                     }
                 }
             }
@@ -772,7 +782,6 @@
                     }
                     .logo7 {
                         width: 140px;
-                        margin-bottom: 0 !important;
                     }
                     .logo8 {
                         width: 60px;
@@ -784,6 +793,10 @@
                     }
                     .logo10 {
                         width: 120px;
+                    }
+                    .logo11 {
+                        width: 80px;
+                        margin-bottom: 0 !important;
                     }
                     .logo-text {
                         margin: 0;

@@ -12,6 +12,7 @@ import logo7 from '../../static/img/partners_logo_7.png';
 import logo8 from '../../static/img/partners_logo_8.png';
 import logo9 from '../../static/img/partners_logo_9.png';
 import logo10 from '../../static/img/accelpoint_logo.png';
+import logo11 from '../../static/img/impact_logo.png';
 
 const Partners = () => {
     return (
@@ -46,6 +47,7 @@ const Partners = () => {
                             <img src={logo6} alt="Alior Bank" className="logo6" />
                             <img src={logo10} alt="Accelpoint" className="logo10" />
                             <img src={logo7} alt="Cashless.pl" className="logo7" />
+                            <img src={logo11} alt="Impact" className="logo11" />
                         </div>
                     </div>
                     <div className="partners-list__row align-top">
