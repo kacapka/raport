@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import Hero from './Hero';
 import Desc from './Desc';
 import Reports from './Reports';
-import Partners from './Partners';
+import PartnersLogos from '../shared/PartnersLogos';
 import Contact from './Contact';
 
 const HomePage = () => {
@@ -11,7 +11,7 @@ const HomePage = () => {
             <Hero />
             <Desc />
             <Reports />
-            <Partners />
+            <PartnersLogos isTitle />
             <Contact />
         </div>
     );

@@ -34,7 +34,7 @@ const Nav = () => {
 				<li className="nav-list__item">
 					<Link href="/partners">
 						<a>
-							Partners
+							Partners & Authors
 						</a>
 					</Link>
 				</li>
@@ -46,17 +46,17 @@ const Nav = () => {
 							</Scroll.Link>
 						</li>
 					) : (
-						<li className="nav-list__item">
-							<Link href="/contact">
-								<a>
-									Contact
+							<li className="nav-list__item">
+								<Link href="/contact">
+									<a>
+										Contact
 								</a>
-							</Link>
-						</li>	
-					)
+								</Link>
+							</li>
+						)
 				}
 				<li className="nav-list__item">
-					<a href="https://fintech-in-poland.s3.eu-central-1.amazonaws.com/how-to-fintech-in-poland.pdf" download target="_blank">
+					<a href="https://fintech-in-poland.s3.eu-central-1.amazonaws.com/FinTechinPoland_report+2020.pdf" download target="_blank">
 						Get the report
 					</a>
 				</li>

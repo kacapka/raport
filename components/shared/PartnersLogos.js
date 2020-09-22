@@ -14,11 +14,11 @@ import logo9 from '../../static/img/partners_logo_9.png';
 import logo10 from '../../static/img/accelpoint_logo.png';
 import logo11 from '../../static/img/impact_logo.png';
 
-const Partners = () => {
+const PartnersLogos = ({ isTitle }) => {
     return (
-        <section className="partners">
+        <section className="partners-logos">
             <div className="container partners-container">
-                <Title color="purple">PARTNERS</Title>
+                {isTitle && <Title color="purple">PARTNERS</Title>}
                 <div className="partners-list">
                     <div className="partners-list__item">
                         <h4>Author:</h4>
@@ -73,4 +73,4 @@ const Partners = () => {
     );
 };
 
-export default Partners;
+export default PartnersLogos;

@@ -62,7 +62,7 @@ const MobileNav = () => {
                             <li>
                                 <Link href="/partners">
                                     <a onClick={closeNav}>
-                                        Partners
+                                        Partners & Authors
 						            </a>
                                 </Link>
                             </li>
@@ -84,7 +84,7 @@ const MobileNav = () => {
                                     )
                             }
                             <li>
-                                <a href="https://fintech-in-poland.s3.eu-central-1.amazonaws.com/how-to-fintech-in-poland.pdf" download target="_blank" onClick={closeNav}>
+                                <a href="https://fintech-in-poland.s3.eu-central-1.amazonaws.com/FinTechinPoland_report+2020.pdf" download target="_blank" onClick={closeNav}>
                                     Get the report
 					            </a>
                             </li>

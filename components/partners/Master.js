@@ -8,14 +8,12 @@ import icon1 from '../../static/img/master_icon_1.png';
 import icon2 from '../../static/img/master_icon_2.png';
 import icon3 from '../../static/img/master_icon_3.png';
 import icon4 from '../../static/img/master_icon_4.png';
-
-import twitterIcon from '../../static/img/twitter_icon.png';
-import linkedIcon from '../../static/img/linked_icon.png';
+import Social from './Social';
 
 const Content = () => {
     return (
         <Fragment>
-            <p className="master-text with-margin">
+            <p className="master-text with-margin margin-top ">
                 Using secure data and networks, partnerships and passion, our innovations and solutions help individuals, financial institutions, governments and businesses realize their greatest potential. With connections across more than 210 countries and territories, we are building a sustainable world that unlocks priceless possibilities for all.
             </p>
             <p className="master-text with-margin">
@@ -78,24 +76,7 @@ const Content = () => {
                 This way we help Fintechs unlock their potential, develop their solutions and thus shape
                 the future of retail and finance with us.
             </p>
-            <div className="master-social">
-                <div className="master-social__icons">
-                    <a href="https://twitter.com/MasterCardPL" target="_blank">
-                        <img src={twitterIcon} alt="twitter" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/mastercard/" target="_blank">
-                        <img src={linkedIcon} alt="linkedin" />
-                    </a>
-                </div>
-                <div className="master-social__links">
-                    <a href="https://mastercardcontentexchange.com/" target="_blank">
-                        www.mastercardcontentexchange.com
-                    </a>
-                    <a href="https://newsroom.mastercard.com/eu/pl/" target="_blank">
-                        www.newsroom.mastercard.com/eu/pl
-                    </a>
-                </div>
-            </div>
+            <Social />
         </Fragment>
     )
 };
@@ -106,7 +87,7 @@ const Master = () => {
     return (
         <div className="container--small master">
             <img src={masterLogo} className="master-logo" alt="MasterCard" />
-            <p className={classnames({ "master-text with-margin": !isTablet })}>
+            <p className="master-text with-margin-desktop">
                 Mastercard is a technology company in the global payments industry. Our mission is to connect and power an inclusive, digital economy that benefits everyone, everywhere by making transactions safe, simple, smart and accessible.
             </p>
             {isTablet ? <CollapseContent><Content /></CollapseContent> : <Content />}

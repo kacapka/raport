@@ -6,7 +6,7 @@ import MobileLogo from '../components/shared/MobileLogo';
 
 const Partners = () => (
     <Fragment>
-        <Head title="Partners" />
+        <Head title="Partners & Authors" />
         <MobileLogo />
         <PartnersPage />
     </Fragment>

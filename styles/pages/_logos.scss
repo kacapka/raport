@@ -1,0 +1,275 @@
+.partners-logos {
+    .partners {
+        &-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 75px 0;
+            &__item {
+                margin-bottom: 100px;
+                h4 {
+                    @extend %medium;
+                    font-size: 24px; 
+                    margin-bottom: 70px; 
+                    text-align: center;
+                }
+                h5 {
+                    @extend %medium;
+                    font-size: 20px; 
+                    margin-bottom: 40px; 
+                    text-align: center;
+                }
+                .logo-text {
+                    text-align: center;
+                    color: #000;
+                    @extend %lato;
+                    font-size: 17px;
+                    line-height: 31px;
+                    margin: 0 120px;
+                }
+                .logo {
+                    width: 350px;
+                }
+                .logo1 {
+                    width: 200px;
+                    margin: 0 115px;
+                }
+                .logo2 {
+                    width: 210px;
+                    margin: 0 115px;
+                }
+                .logo3 {
+                    width: 185px;
+                }
+                .logo4 {
+                    width: 200px;
+                    margin: 0 200px;
+                }
+                .logo5 {
+                    width: 200px;
+                }
+                .logo6 {
+                    width: 115px;
+                    margin-right: 100px;
+                }
+                .logo7 {
+                    width: 240px;
+                }
+                .logo8 {
+                    width: 110px;
+                    margin: 0 25px;
+                }
+                .logo9 {
+                    width: 200px;
+                    margin: 0 25px;
+                }
+                .logo10 {
+                    width: 200px;
+                    margin: 0 100px 0 50px;
+                }
+                .logo11 {
+                    width: 130px;
+                    margin: 0 0 0 100px;
+                }
+            }
+            &__images-wrapper {
+                display: flex;
+                align-items: center;
+            }
+            &__row {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &.align-top {
+                    align-items: flex-start;
+                }
+            }
+        }
+    }    
+}
+
+@media all and (max-width: 1366px) {
+    .partners-logos {
+        .partners {
+            &-list {
+                &__item {
+                    margin-bottom: 60px;
+                    h4 {
+                        font-size: 18px; 
+                        margin-bottom: 50px; 
+                    }
+                    h5 {
+                        font-size: 15px; 
+                        margin-bottom: 30px; 
+                    }
+                    .logo-text {
+                        font-size: 13px;
+                        line-height: 23px;
+                        margin: 0 80px;
+                    }
+                    // scale(0.75)
+                    .logo {
+                        width: 270px;
+                    }
+                    .logo1 {
+                        width: 150px;
+                        margin: 0 80px;
+                    }
+                    .logo2 {
+                        width: 160px;
+                        margin: 0 80px;
+                    }
+                    .logo3 {
+                        width: 140px;
+                    }
+                    .logo4 {
+                        width: 130px;
+                        margin: 0 200px;
+                    }
+                    .logo5 {
+                        width: 140px;
+                    }
+                    .logo6 {
+                        width: 85px;
+                    }
+                    .logo7 {
+                        width: 180px;
+                    }
+                    .logo8 {
+                        width: 80px;
+                        margin: 0 20px;
+                    }
+                    .logo9 {
+                        width: 150px;
+                        margin: 0 20px;
+                    }
+                    .logo10 {
+                        width: 150px;
+                    }
+                    .logo11 {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media all and (max-width: 1024px) {
+    .partners-logos {
+        .partners {
+            &-list {
+                &__item {
+                    margin-bottom: 60px;
+                    h4 {
+                        font-size: 16px; 
+                        margin-bottom: 40px; 
+                    }
+                    h5 {
+                        font-size: 16px; 
+                    }
+                    .logo4 {
+                        margin: 0 100px;
+                    }
+                    .logo6 {
+                        margin-right: 30px;
+                    }
+                    .logo10 {
+                        margin-right: 70px;
+                    }
+                    .logo11 {
+                        margin: 0 0 0 50px;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media all and (max-width: 767px) {
+    .partners-logos {
+        .partners {
+            &-list {
+                margin-bottom: 0;
+                &__item {
+                    margin-bottom: 60px;
+                    h4 {
+                        font-size: 22px; 
+                        margin-bottom: 40px; 
+                    }
+                    h5 {
+                        font-size: 22px; 
+                    }
+                    img {
+                        margin: 0 0 30px 0 !important;
+                    }
+                }
+                &__row {
+                    flex-direction: column;
+                    &.align-top {
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media all and (max-width: 500px) {
+    .partners-logos {
+        .partners {
+            &-list {
+                margin: 40px 0 0 0;
+                &__item {
+                    margin-bottom: 40px;
+                    h4 {
+                        font-size: 15px; 
+                        margin-bottom: 40px; 
+                    }
+                    h5 {
+                        font-size: 15px; 
+                        margin-bottom: 20px; 
+                    }
+                    .logo {
+                        width: 200px;
+                    }
+                    .logo1 {
+                        margin-bottom: 40px !important;
+                    }
+                    .logo3 {
+                        width: 120px;
+                    }
+                    .logo4 {
+                        width: 80px;
+                    }
+                    .logo7 {
+                        width: 140px;
+                    }
+                    .logo8 {
+                        width: 60px;
+                        margin-right: 20px !important;
+                    }
+                    .logo9 {
+                        width: 120px;
+                        margin-left: 20px !important;
+                    }
+                    .logo10 {
+                        width: 120px;
+                    }
+                    .logo11 {
+                        width: 80px;
+                        margin-bottom: 0 !important;
+                    }
+                    .logo-text {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }   
+}
