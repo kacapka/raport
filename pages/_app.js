@@ -10,11 +10,10 @@ class MyApp extends App {
 
         return (
             <React.Fragment>
-                <img src="https://fintech-in-poland.s3.eu-central-1.amazonaws.com/placeholder.png" style={{ width: '100%' }} />
-                {/* <Nav />
+                <Nav />
                 <MobileNav />
                 <Component {...pageProps} />
-                <Footer /> */}
+                <Footer />
             </React.Fragment>
         )
     }
