@@ -1,6 +1,6 @@
 .policy {
     .content {
-        padding: 40px 0;
+        padding: 40px 0 80px 0;
         &-text {
             @extend %subpage-desc;
             font-weight: 300;
@@ -21,4 +21,12 @@
             text-decoration: underline !important;
         }
     }
+}
+
+@media all and (max-width: 500px) {
+    .policy {
+        .content {
+            padding: 40px 20px 40px 20px;
+        }
+    }    
 }
