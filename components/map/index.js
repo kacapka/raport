@@ -1,5 +1,6 @@
 import SubpageHeader from '../shared/SubpageHeader';
 import Mapa from './Map';
+import Text from './Text';
 
 const Map = () => {
     return (
@@ -7,6 +8,7 @@ const Map = () => {
             <SubpageHeader>
                 Map of Polish Fintechs
             </SubpageHeader>
+            <Text />
             <Mapa />
         </div>
     );

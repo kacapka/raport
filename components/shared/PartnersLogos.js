@@ -23,7 +23,9 @@ const PartnersLogos = ({ isTitle }) => {
                     <div className="partners-list__item">
                         <h4>Author:</h4>
                         <div className="partners-list__row">
-                            <img src={logo} alt="fintech poland" className="logo" />
+                            <a href="http://fintechpoland.com/" target="blank">
+                                <img src={logo} alt="fintech poland" className="logo" />
+                            </a>
                         </div>
                     </div>
                     <div className="partners-list__item">

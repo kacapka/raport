@@ -4,7 +4,9 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container footer-container">
-                <img src={logo} className="footer-logo" alt="fintech poland" />
+                <a href="http://fintechpoland.com/" target="blank">
+                    <img src={logo} className="footer-logo" alt="fintech poland" />
+                </a>
                 <div className="footer-text">
                     <p className="bold">FinTech Poland Foundation.</p>
                     <p className="regular">We combine business, regulatory, academic and market innovators.</p>

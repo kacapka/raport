@@ -5,6 +5,12 @@
    &-image {
        width: 100%;
    }
+   &-text {
+       @extend %subpage-desc;
+       a {
+           font-weight: 700;
+       }
+   }
 }
 
 @media all and (max-width: 767px) {

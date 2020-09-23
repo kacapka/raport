@@ -7,7 +7,9 @@ const Hero = () => {
         <section className="hero">
             <div className="container hero-container">
                 <div>
-                    <img src={logo} className="hero-logo" alt="fintech poland" />
+                    <a href="http://fintechpoland.com/" target="blank">
+                        <img src={logo} className="hero-logo" alt="fintech poland" />
+                    </a>
                     <h1>
                         How to <br />
                         do FinTech <br />
