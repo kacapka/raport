@@ -191,9 +191,13 @@
 @media all and (max-width: 1366px) {
     .home {
         .hero {
-            height: calc(100vh - 100px);
+            height: calc(100vh - 60px); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
             &-container {
-                // padding: 100px 25px 0 25px;
+                padding: 0 25px;
             } 
             &-logo {
                 width: 165px;
